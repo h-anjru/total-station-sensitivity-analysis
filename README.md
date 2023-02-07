@@ -36,13 +36,15 @@ $\sigma_D=\sqrt{a^2+(D\times b)^2}$
 
 For each set of test values for zenith angle $z$ and slope distance $D$, the two components of $\sigma_V^2$ are calculated. The value that is plotted to the final heatmap is the **zenith-angle-to-slope-distance ratio**:
 
-$\left(\dfrac{\partial{V}}{\partial{z}}\sigma_z\right)^2\div \left(\dfrac{\partial{V}}{\partial{D}}\sigma_D\right)^2$
+$\dfrac{\partial{V}}{\partial{z}}\sigma_z \div \dfrac{\partial{V}}{\partial{D}}\sigma_D$
 
 A value of the ratio >1 means that, at the given zenith angle and slope distance, the error in the zenith angle observation $z$ has a greater effect on the resulting vertical distance $V$ than the error in the slope distance observation $D$. For values of the ratio <1, the reverse is true.
 
 ## Future work
 
-For a easier-to-comprehend comparison of the ratios in the heatmap, I want to express values <1 as a fraction $1/x$. This would allow more direct comparison of the denominator $x$ with the values of ratios >1.
+For a easier-to-comprehend comparison of the ratios in the heatmap, I want to express those ratio values <1 as a fraction $1/x$. This would allow more direct comparison of the denominator $x$ with the values of ratios >1.
+
+To manually change how the values in each cell display in a heatmap, [this answer from MATLAB Answers](https://www.mathworks.com/matlabcentral/answers/838348-how-to-change-heatmap-data-labels) indicates a somewhat lengthy process that I have not had time to test or implement. 
 
 ## Acknowledgements
 Víctor Martínez-Cagigal (2022). Custom Colormap (https://www.mathworks.com/matlabcentral/fileexchange/69470-custom-colormap), MATLAB Central File Exchange. Retrieved November 23, 2022.
